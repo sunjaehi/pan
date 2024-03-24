@@ -1,26 +1,33 @@
 import React from "react";
 import styled from "styled-components";
-import dataJson from "../db/data.json"; 
+import BodListItem from './BodListItem';
 
-const Add=styled.div`
-    font-size:40px;
-    color: black;
-    padding:5px;
-    text-align:center;
+const Wrapper=styled.div`
+    display:flex;
+    flex-direction:column;
+    align-items:flex-start;
+    justify-content:center;
+    :not(:last-child) {
+        margin-bottom:15px;
+    }
 `;
-export default function BodList() {
-    console.log(dataJson);
+function BodList(props) {
+    const {bods,onClickItem}=props;
     return (
-        <>
-        <Add>게시판</Add>
-            {
-                dataJson.students.map(b=> (
-                    <li key={b.id}>
-                        {b.name}
-                    </li>
-                ))
-            }
-        </>
-
+        <Wrapper>
+            {bods.map((bod,index)=> {
+                return (
+                    <BodListItem
+                        key={bod.id}
+                        bod={bod}
+                        onClick={()=> {
+                            onClickItem(bod);
+                        }}
+                    />
+                );
+                
+            })}
+        </Wrapper>
     );
 }
+export default BodList;

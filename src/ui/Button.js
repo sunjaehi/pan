@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledButton=styled.button`
-    padding:4px;
+    padding:4px 4px;
     font-size:15px;
     flex-direction:column;
     align-items: center;
@@ -11,7 +11,8 @@ const StyledButton=styled.button`
     border-width:1px;
     border-radius:8px;
     cursor:pointer;
-    width: 10%;
+    width: 110px;
+    height: 30px;
     background: white;
     margin-bottom :10px;
     &:hover {

@@ -4,7 +4,7 @@ import BodList from "../component/BodList";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import Button from "../ui/Button";
-//import data from '.db/data';
+import data from '../data.json';
 const Wrapper=styled.div`
     padding: 10px;
     display: flex;
@@ -12,21 +12,27 @@ const Wrapper=styled.div`
     align-items: flex-start;
     justify-content: center;
 `;
-
+const Container=styled.div`
+    width:100%;
+    max-width:720px;
+    :not(:last-child) {
+        margin-bottom:15px;
+    }
+`;
 function MainPage() {
     const navigate=useNavigate();
     return (
         <Wrapper>
             <Button
-            name='홈'
+            name='목록'
             onClick={()=> {
                 navigate('/home-page');
             }}
             />
             <Button
-            name='목록'
+            name='댓글'
             onClick={()=> {
-                navigate('/bod-page');
+                navigate('/comment-page');
             }}
             />
             <Button
@@ -36,6 +42,7 @@ function MainPage() {
             }}
             />
         </Wrapper>
+        
         
     );
     

@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import HomePage from './page/HomePage.js';
 import BodPage from './page/BodPage.js';
 import ReviewPage from './page/ReviewPage.js';
+import CommentPage from './page/CommentPage.js';
 
 
 const MainTitle=styled.div`
@@ -26,8 +27,9 @@ function App() {
       <Routes>
         <Route index element={<MainPage />} />
         <Route path="home-page" element={<HomePage />} />
-        <Route path="bod-page" element={<BodPage />} />
+        <Route path="comment-page" element={<CommentPage />} />
         <Route path="review-page" element={<ReviewPage />} />
+        <Route path="bod/:bodId" element={<BodPage />} />
       </Routes>
     </BrowserRouter>
   );
