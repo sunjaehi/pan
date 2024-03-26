@@ -6,7 +6,7 @@ import Button from "../ui/Button";
 
 const Wrapper=styled.div`
     padding:15px;
-    width:100%;
+    width:calc(100%-30px);
     display:flex;
     flex-direction:column;
     align-items:center;
@@ -30,7 +30,7 @@ function ReviewPage(props) {
         <Wrapper>
             <Container>
                 <TextInput
-                    height={20}
+                    height={200}
                     value={title}
                     onChange={(event)=> {
                         setTitle(event.target.value);
