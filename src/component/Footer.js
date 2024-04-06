@@ -18,8 +18,7 @@ function Footer() {
         <>
             <Wrapper>
             <hr />
-            이용안내 
-            처리방침
+            이용안내  처리방침
             </Wrapper>
         </>
         

@@ -23,9 +23,9 @@ function App() {
     <BrowserRouter>
       <MainTitle>Board</MainTitle>
       <hr />
+      <MainPage />
+      <HomePage />
       <Routes>
-        <Route index element={<MainPage />} />
-        <Route path="home-page" element={<HomePage />} />
         <Route path="comment-page" element={<CommentPage />} />
         <Route path="review-page" element={<ReviewPage />} />
         <Route path="bod/:bodId" element={<BodPage />} />
