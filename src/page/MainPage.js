@@ -1,5 +1,5 @@
 import React from "react";
-import Header from "../component/Header";
+import Footer from "../component/Footer";
 import BodList from "../component/BodList";
 import styled from "styled-components";
 import { useNavigate } from "react-router-dom";

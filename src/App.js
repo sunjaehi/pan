@@ -1,6 +1,5 @@
 import './App.css';
-import BoardList from './component/BodList.js';
-import Header from './component/Header.js';
+import Footer from './component/Footer.js';
 import MainPage from './page/MainPage.js';
 import styled from 'styled-components';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
@@ -31,6 +30,7 @@ function App() {
         <Route path="review-page" element={<ReviewPage />} />
         <Route path="bod/:bodId" element={<BodPage />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   );
 }

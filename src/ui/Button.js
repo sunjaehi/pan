@@ -11,10 +11,9 @@ const StyledButton=styled.button`
     border-width:1px;
     border-radius:8px;
     cursor:pointer;
-    width: 110px;
-    height: 30px;
     background: white;
     margin-bottom :10px;
+    display:flex;
     &:hover {
         background: lightgrey;
     }
