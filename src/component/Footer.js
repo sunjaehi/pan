@@ -7,7 +7,7 @@ const Wrapper=styled.div`
     background-color:azure;
     padding:5px;
     flex-direction : row;
-    justify-content:space-around;
+    justify-content:space-between;
     position:fixed;
     bottom:0;
     left:0;
@@ -17,7 +17,6 @@ function Footer() {
     return (
         <>
             <Wrapper>
-            <hr />
             이용안내  처리방침
             </Wrapper>
         </>

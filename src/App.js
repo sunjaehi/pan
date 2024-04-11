@@ -23,14 +23,17 @@ function App() {
     <BrowserRouter>
       <MainTitle>Board</MainTitle>
       <hr />
+      <div className='main-container'>
       <MainPage />
-      <HomePage />
+      {/* <HomePage /> */}
       <Routes>
+       <Route path="/" element={<HomePage/>}></Route>
         <Route path="comment-page" element={<CommentPage />} />
         <Route path="review-page" element={<ReviewPage />} />
         <Route path="bod/:bodId" element={<BodPage />} />
       </Routes>
       <Footer />
+      </div>
     </BrowserRouter>
   );
 }

@@ -11,6 +11,7 @@ const Wrapper=styled.div`
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+    width: 200px;
 `;
 const Container=styled.div`
     width:100%;
