@@ -1,6 +1,7 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { BrowserRouter, Route, Routes,Link } from "react-router-dom";
 import styled from "styled-components";
+import BodPage from "../page/BodPage";
 
 const Wrapper=styled.div`
     font-size:13px;
@@ -12,14 +13,19 @@ const Wrapper=styled.div`
     bottom:0;
     left:0;
     right:0;
+    
+`;
+const Linnk=styled(Link)`
+    margin:5px;
+    margin-right:15px;
+    cursor:pointer;
 `;
 function Footer() {
     return (
-        <>
-            <Wrapper>
-            이용안내  처리방침
-            </Wrapper>
-        </>
+        <Wrapper>
+            <Linnk to="/">공지사항</Linnk>
+            <Linnk to="BodPage">목록</Linnk>
+        </Wrapper>
         
     );    
 }
