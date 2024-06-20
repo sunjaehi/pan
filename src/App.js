@@ -1,12 +1,12 @@
 import './App.css';
-import Footer from './component/Footer.js';
-import MainPage from './page/MainPage.js';
+import Footer from './component/Footer.jsx';
+import MainPage from './page/MainPage.jsx';
 import styled from 'styled-components';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
-import HomePage from './page/HomePage.js';
-import BodPage from './page/BodPage.js';
-import ReviewPage from './page/ReviewPage.js';
-import CommentPage from './page/CommentPage.js';
+import HomePage from './page/HomePage.jsx';
+import BodPage from './page/BodPage.jsx';
+import ReviewPage from './page/ReviewPage.jsx';
+import CommentPage from './page/CommentPage.jsx';
 
 
 const MainTitle=styled.div`

@@ -21,7 +21,5 @@ const StyledButton=styled.button`
 function Button(props) {
     const {name,onClick}=props;
     return <StyledButton onClick={onClick}>{name || "button"}</StyledButton>;
-
-
 }
 export default Button;

@@ -5,6 +5,7 @@ import styled from "styled-components";
 import { useNavigate } from "react-router-dom";
 import Button from "../ui/Button";
 import data from '../data.json';
+
 const Wrapper=styled.div`
     padding: 10px;
     display: flex;
@@ -20,6 +21,7 @@ const Container=styled.div`
         margin-bottom:15px;
     }
 `;
+
 function MainPage() {
     const navigate=useNavigate();
     return (
