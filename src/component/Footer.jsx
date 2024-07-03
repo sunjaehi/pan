@@ -19,6 +19,8 @@ const Linnk=styled(Link)`
     margin:5px;
     margin-right:15px;
     cursor:pointer;
+    text-decoration:none;
+    color:black;
 `;
 function Footer() {
     return (
