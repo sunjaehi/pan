@@ -11,8 +11,7 @@ const MainTitle=styled(Link)`
     text-align:left;
     padding:10px;
     color:grey;
-    background-color:azure;
-    margin-left:10px;
+    background-color:lightyellow;
     display:flex;
     text-decoration:none;
     justify-content:space-between;
@@ -28,7 +27,7 @@ const Linnk=styled(Link)`
     cursor:pointer;
     text-decoration:none;
     color:black;
-    font-size:15px;
+    font-size:20px;
     font-weight:normal;
 `;
 
