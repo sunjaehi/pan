@@ -7,6 +7,7 @@ import BodPage from './page/BodPage.jsx';
 import ReviewPage from './page/ReviewPage.jsx';
 import CommentPage from './page/CommentPage.jsx';
 import Header from './component/Header.jsx';
+import NoticePage from './page/NoticePage.jsx';
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
        <Route path="/" element={<HomePage/>}></Route>
         <Route path="comment-page" element={<CommentPage />} />
         <Route path="review-page" element={<ReviewPage />} />
+        <Route path="NoticePage" element={<NoticePage />} />
         <Route path="bod/:bodId" element={<BodPage />} />
       </Routes>
       <Footer />

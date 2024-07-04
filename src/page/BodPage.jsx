@@ -1,8 +1,10 @@
-import React, { useState }from "react";
+import React, {useState }from "react";
 import styled from "styled-components";
 import { useNavigate, useParams } from "react-router-dom";
 import data from '../data.json';
 import Button from "../ui/Button";
+import BodList from "../component/BodList";
+
 
 const Wrapper=styled.div`
     padding:15px;
@@ -11,6 +13,7 @@ const Wrapper=styled.div`
     flex-direction:column;
     align-items:center;
     justify-content:center;
+    overflow-y:scroll;
 `;
 const Container=styled.div`
     width:100%;
@@ -19,22 +22,8 @@ const Container=styled.div`
         margin-bottom:15px;
     }
 `;
-const BodContainer=styled.div`
-    padding:8px 16px;
-    border: 1px solid grey;
-    border-radius:8px;
-`;
-const TitleText=styled.p`
-    font-size:25px;
-    font-weight:500;
-`;
-const TeText=styled.p`
-    font-size:18px;
-    lint-height:30px;
-    white-space:pre-wrap;
-`;
 
-function BodPage(props) {
+function HomePage(props) {
     const navigate=useNavigate();
     const {bodId}=useParams();
 
@@ -44,19 +33,21 @@ function BodPage(props) {
     return (
         <Wrapper>
             <Container>
+                <BodList
+                    bods={data}
+                    onClickItem={(item)=> {
+                        navigate(`/bod/${item.id}`);
+                    }}
+                />
                 <Button
-                    name='뒤로 가기'
+                    name='홈'
                     onClick={()=> {
                         navigate('/');
                     }}
                 />
-                <BodContainer>
-                    <TitleText>{bod.title}</TitleText>
-                    <TeText>{bod.text}</TeText>
-                </BodContainer>
             </Container>
         </Wrapper>
     )
 
 }
-export default BodPage;
+export default HomePage;
