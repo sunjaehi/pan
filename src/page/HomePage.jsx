@@ -8,7 +8,7 @@ const MainText = styled.div`
 function HomePage() {
     return (
         <MainText>환영합니다.</MainText>
-    )
+    );
 
 }
  export default HomePage;

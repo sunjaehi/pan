@@ -4,6 +4,7 @@ import styled from "styled-components";
 import BodPage from "../page/BodPage";
 import CommentPage from "../page/CommentPage";
 import ReviewPage from "../page/ReviewPage";
+import LoginPage from "../page/LoginPage";
 
 const MainTitle=styled(Link)`
     font-size:40px;
@@ -38,7 +39,7 @@ function Header() {
         <MainTitle to="/">
             Board
             <Categories>
-                <Linnk to="BodPage">목록</Linnk>
+                <Linnk to="LoginPage">로그인</Linnk>
                 <Linnk to="CommentPage">댓글</Linnk>
                 <Linnk to="ReviewPage">문의</Linnk>
             </Categories>
