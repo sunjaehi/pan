@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
+import Button from "../ui/Button";
 
 const Container = styled.div`
     display:flex;
@@ -24,20 +25,27 @@ const IdInput = styled.input`
     border-radius:5px;
     margin:20px;
     border:1px solid;
+    padding-left:10px;
 `;
-const LoginButton = styled.button`
-    border-radius:5px;
-    flex-direction:row;
+const InnerContainer = styled.div`
     display:flex;
+    align-items:center;
+    justify-content:center; /*가로정렬*/
+    gap:15px;
+    margin-top:40px;
 `;
+
 
 function LoginPage() {
     const [username, setUsername] = useState('');
     const [userPassword, setUserpassword] = useState('');
 
-    const onField = e => {
+    const onId = e => {
         setUsername(e.target.value);
     };
+    const onPassword = e => {
+        setUserpassword(e.target.value);
+    }
 
     return (
         <Container>
@@ -46,15 +54,20 @@ function LoginPage() {
                 type="text"
                 name="username"
                 value={username}
-                onChange={onField}
+                onChange={onId}
                 placeholder="아이디를 입력해주세요"
             />
             <IdInput
                 type="text"
                 name="userPassword"
                 value={userPassword}
+                onChange={onPassword}
                 placeholder="비밀번호를 입력해주세요"
             />
+            <InnerContainer>
+                <Button>취소</Button>
+                <Button>로그인</Button>
+            </InnerContainer>
         </Container>
         
     )

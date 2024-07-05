@@ -2,24 +2,27 @@ import React from "react";
 import styled from "styled-components";
 
 const StyledButton=styled.button`
-    padding:4px 4px;
+    padding:5px 10px;
     font-size:15px;
-    flex-direction:column;
+    flex-direction:row;
     align-items: center;
-    justify-content: flex-start;
+    justify-content: center;
     border: 1px solid grey;
     border-width:1px;
     border-radius:8px;
     cursor:pointer;
-    background: white;
+    background: #fff8dc;
+    width:100px;
+    height:40px;
     margin-bottom :10px;
     display:flex;
     &:hover {
-        background: lightgrey;
+        background: #ffebcd;
     }
 `;
-function Button(props) {
-    const {name,onClick}=props;
-    return <StyledButton onClick={onClick}>{name || "button"}</StyledButton>;
+function Button({children,...props}) {
+    return (
+        <StyledButton {...props}>{children}</StyledButton>
+    )
 }
 export default Button;
