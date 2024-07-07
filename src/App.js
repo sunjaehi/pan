@@ -19,7 +19,7 @@ function App() {
       <Routes>
        <Route path="/" element={<HomePage/>}></Route>
         <Route path="comment-page" element={<CommentPage />} />
-        <Route path="review-page" element={<ReviewPage />} />
+        <Route path="Reviewpage" element={<ReviewPage />} />
         <Route path="NoticePage" element={<NoticePage />} />
         <Route path="LoginPage" element={<LoginPage />}/>
         <Route path="bod/:bodId" element={<BodPage />} />

@@ -12,7 +12,7 @@ const StyledButton=styled.button`
     border-radius:8px;
     cursor:pointer;
     background: #fff8dc;
-    width:100px;
+    width:150px;
     height:40px;
     margin-bottom :10px;
     display:flex;
