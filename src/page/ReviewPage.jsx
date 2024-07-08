@@ -14,7 +14,7 @@ const Title = styled.div`
 function ReviewPage() {
     const navigate = useNavigate();
     return (
-        <Title>공지사항 목록</Title>
+        <Title>문의 내역</Title>
 
     )
 
