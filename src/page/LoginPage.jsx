@@ -37,6 +37,11 @@ const InnerContainer = styled.div`
 
 
 function LoginPage() {
+    const navigate = useNavigate();
+    const navigateToHome = () => {
+        navigate("/");
+    }
+
     const [username, setUsername] = useState('');
     const [userPassword, setUserpassword] = useState('');
 
@@ -65,7 +70,7 @@ function LoginPage() {
                 placeholder="비밀번호를 입력해주세요"
             />
             <InnerContainer>
-                <Button>취소</Button>
+                <Button onClick={navigateToHome}>취소</Button>
                 <Button>로그인</Button>
             </InnerContainer>
         </Container>
