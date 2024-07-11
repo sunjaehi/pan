@@ -10,11 +10,20 @@ const Title = styled.div`
     justify-content:center;
     align-items:center;
 `;
+const Container = styled.div`
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
+`;
 
 function ReviewPage() {
     const navigate = useNavigate();
     return (
-        <Title>문의 내역</Title>
+        <Container>
+            <Title>문의 내역</Title>
+        </Container>
+        
 
     )
 

@@ -26,6 +26,12 @@ const IdInput = styled.input`
     margin:20px;
     border:1px solid;
     padding-left:10px;
+    &:hover {
+        border:1px solid;
+    }
+    &:focus {
+        border:1px solid;
+    }
 `;
 const InnerContainer = styled.div`
     display:flex;

@@ -11,7 +11,7 @@ const Container=styled.div`
 const InnerContainer = styled.div`
     display:flex;
     align-items:right;
-    justify-content:right;
+    justify-content:space-between;
     margin-top:20px;
 `;
 
