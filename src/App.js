@@ -9,6 +9,7 @@ import CommentPage from './page/CommentPage.jsx';
 import Header from './component/Header.jsx';
 import NoticePage from './page/NoticePage.jsx';
 import LoginPage from './page/LoginPage.jsx';
+import ListPage from './page/ListPage.jsx';
 
 
 function App() {
@@ -23,6 +24,7 @@ function App() {
         <Route path="NoticePage" element={<NoticePage />} />
         <Route path="LoginPage" element={<LoginPage />}/>
         <Route path="bod/:bodId" element={<BodPage />} />
+        <Route path="ListPage" element={<ListPage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
