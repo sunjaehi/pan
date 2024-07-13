@@ -4,6 +4,7 @@ import styled from "styled-components";
 const StyledButton=styled.button`
     padding:5px 10px;
     font-size:15px;
+    font-family: 'Ownglyph_ryuttung-Rg';
     flex-direction:row;
     align-items: center;
     justify-content: center;
@@ -12,7 +13,7 @@ const StyledButton=styled.button`
     border-radius:8px;
     cursor:pointer;
     background: #fff8dc;
-    width:150px;
+    width:120px;
     height:40px;
     margin-bottom :10px;
     display:flex;

@@ -32,6 +32,7 @@ const IdInput = styled.input`
     &:focus {
         border:1px solid;
     }
+    font-family: 'Ownglyph_ryuttung-Rg';
 `;
 const InnerContainer = styled.div`
     display:flex;
