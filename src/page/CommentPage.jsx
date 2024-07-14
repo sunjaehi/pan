@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import Button from "../ui/Button";
 
@@ -10,8 +11,9 @@ const Container=styled.div`
 `;
 const InnerContainer = styled.div`
     display:flex;
-    align-items:right;
-    justify-content:space-between;
+    align-items:center;
+    gap:15px;
+    justify-content:center;
     margin-top:20px;
 `;
 
@@ -35,7 +37,7 @@ const CommentTitle = styled.input`
     ::placeholder {
         color:black;
     }
-
+    font-family: 'Ownglyph_ryuttung-Rg';
     
 `;
 const Comment = styled.input`
@@ -46,9 +48,15 @@ const Comment = styled.input`
     margin-top:30px;
     border-radius:5px;
     border:1px solid;
+    font-family: 'Ownglyph_ryuttung-Rg';
 `;
 
 function CommentPage() {
+    const navigate = useNavigate();
+    const navigateToList = () => {
+        navigate("/ListPage");
+    }
+
     const [title, setTitle] = useState('');
     const [comment, setComment] = useState('');
 
@@ -77,6 +85,7 @@ function CommentPage() {
                 onChange={onContent}
             />
             <InnerContainer>
+                <Button onClick={navigateToList}>목록</Button>
                 <Button>등록</Button>
             </InnerContainer>
             

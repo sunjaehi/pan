@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const StyledButton=styled.button`
     padding:5px 10px;
-    font-size:15px;
+    font-size:18px;
     font-family: 'Ownglyph_ryuttung-Rg';
     flex-direction:row;
     align-items: center;

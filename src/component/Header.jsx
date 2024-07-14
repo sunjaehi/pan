@@ -40,7 +40,7 @@ function Header() {
             Blog
             <Categories>
                 <Linnk to="LoginPage">로그인</Linnk>
-                <Linnk to="CommentPage">댓글</Linnk>
+                <Linnk to="ListPage">댓글</Linnk>
                 <Linnk to="ReviewPage">문의</Linnk>
             </Categories>
         </MainTitle>
