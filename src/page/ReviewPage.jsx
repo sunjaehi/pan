@@ -19,9 +19,14 @@ const Container = styled.div`
 
 function ReviewPage() {
     const navigate = useNavigate();
+    const navigateToQa = () => {
+        navigate("/QaWritePage");
+    }
+
     return (
         <Container>
             <Title>문의 내역</Title>
+            <Button onClick={navigateToQa}>문의 작성하기</Button>
         </Container>
         
 

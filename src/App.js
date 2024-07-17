@@ -10,6 +10,7 @@ import Header from './component/Header.jsx';
 import NoticePage from './page/NoticePage.jsx';
 import LoginPage from './page/LoginPage.jsx';
 import ListPage from './page/ListPage.jsx';
+import QaWritePage from './page/QaWritePage.jsx';
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
         <Route path="LoginPage" element={<LoginPage />}/>
         <Route path="bod/:bodId" element={<BodPage />} />
         <Route path="ListPage" element={<ListPage />} />
+        <Route path="QaWritePage" element={<QaWritePage />} />
       </Routes>
       <Footer />
     </BrowserRouter>
