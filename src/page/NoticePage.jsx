@@ -1,6 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
+const Container=styled.div`
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+`;
+
 const Search = styled.div`
     display:flex;
     text-align:center;
@@ -12,8 +19,12 @@ const Search = styled.div`
 `
 
 function NoticePage() {
+    
     return (
-        <Search>공지사항</Search>
+        <Container>
+            <Search>공지사항</Search>
+        </Container>
+        
     );
 
 }
